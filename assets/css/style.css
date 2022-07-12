@@ -9,6 +9,11 @@ html{
     font-family: Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
+input{
+    -webkit-appearance: none; /* fix trên safari */
+    -moz-appearance: none; /* fix trên safari */
+    appearance: none;
+}
 /* 
 Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan đến chi tiết
 1.Vị trí 
@@ -68,9 +73,6 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     display: inline-block;
     margin-top: 15px;
     border-width: 1px;
-
-    -webkit-appearance: none; /* fix trên safari */
-    
 
 }
 .btn:hover{
