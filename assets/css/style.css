@@ -54,6 +54,9 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
 .mt-16 {
     margin-top: 16px;
 }
+.mt-32 {
+    margin-top: 32px;
+}
 .text-center {
     text-align: center !important;
 }
@@ -65,6 +68,9 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     display: inline-block;
     margin-top: 15px;
     border-width: 1px;
+
+    -webkit-appearance: none; /* fix trên safari */
+    
 
 }
 .btn:hover{
@@ -88,6 +94,7 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     height:46px;
     background-color: #000;
     z-index: 1;
+    
 
 }
 #nav {
@@ -144,6 +151,13 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
 #nav .nav-arrow-down {
     font-size: 13px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -154,6 +168,14 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     background-color: #f44336;
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #ccc;
+    color: #000;
+}
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -186,6 +208,7 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
 #slider .text-decoration {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 
 }
 
@@ -224,7 +247,7 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     line-height: 1.4;
 }
 #content .member-list{
-    margin-top: 48px;;
+    margin-top: 32px;
     /* overflow: hidden; giải quyết vde với float*/
 }
 /* #content .member-item {
@@ -278,7 +301,7 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
 /* Places */
 .places-list{
     /* margin: 32px -8px 0 -8px; */
-    margin-top: 32px;
+    margin-top: 16px;
     padding-bottom: 48px;
 
 }
@@ -426,7 +449,13 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
     width: 30px;
     display: inline-block;
 }
-
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
+}
 .contact-form {
     font-size: 15px;
 }
@@ -469,5 +498,5 @@ Nguyên tắc: từ ngoài vào trong, từ trên xuống dưới, tổng quan �
 .footer-desc a{
     color : #000;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 2;
 }
